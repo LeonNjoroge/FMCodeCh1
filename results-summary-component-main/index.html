@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,33 +16,78 @@
   </style>
 </head>
 <body>
+<main>
 
-  Your Result
-  76
-  of 100
+  <section class = "section-parent">
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <div class = "section-child" id ="resultArea">
 
-  Reaction
-  80 / 100
+      <h3 class = "resultUpper">Your Result</h3>
 
-  Memory
-  92 / 100
+      <div class = "resultCircle"> 
+            <p><strong style="font-size: 4em;" id="resultValue">76</strong> <br>of 100</p>
+      </div>
 
-  Verbal
-  61 / 100
+      <h2 class = "resultLower" id="h2Lower"> Great</h2>
+        <p id="pLower"> You scored higher than 65% of<br>
+          the people who have taken <br>
+          these tests.</p>
 
-  Visual
-  72 / 100
+    </div>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class = "section-child" id="summaryArea">
+
+      <h3 class = "summaryUpper">Summary</h3>
+
+
+      <div class = "fig-box" style="background-color: hsla(0, 100%, 67%,0.05);">
+        <img src="assets\images\icon-reaction.svg" class="value-icons">
+        
+          <p class= "value-val" style="color: hsl(0, 100%, 67%);" >Reaction</p> <p class="value-num"><b id="reac">80</b> / 100</p>
+        
+
+      </div>
+        
+      <div class = "fig-box" style="background-color: hsla(39, 100%, 56%,0.05);">
+        <img src="assets\images\icon-memory.svg" class="value-icons">
+        
+          <p class= "value-val" style="color: hsl(39, 100%, 56%);" >Memory</p> <p class="value-num"><b id="mem">92</b> / 100</p>
+        
+      </div>
+
+      <div class = "fig-box" style="background-color: hsla(166, 100%, 37%,0.05);">
+        <img src="assets\images\icon-verbal.svg" class="value-icons">
+       
+          <p class= "value-val" style="color: hsl(166, 100%, 37%);" >Verbal</p> <p class="value-num"><b id="ver">61</b> / 100</p>
+          
+        </div>
+
+      <div class = "fig-box"  style="background-color: hsla(234, 85%, 45%,0.05);">
+        <img src="assets\images\icon-visual.svg" class="value-icons">
+        
+          <p class= "value-val" style="color: hsl(234, 85%, 45%);" >Visual</p>  <p class="value-num"><b id="vis">72</b> / 100</p>
+          
+        
+      </div>
+      <button type = "submit" id="continue"> Continue </button>
+
+    </div>
+
+  </section>
+
+
+</main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by Frontend Mentor</a>. 
+      Coded by <a href="#" style="text-decoration: none;">Leon Njoroge</a>.
+    </div>
+  </footer>
+
+
 </body>
+  <script src="script.js"></script>
+  <script src="data.json"></script>
+
 </html>

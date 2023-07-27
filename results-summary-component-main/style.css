@@ -1,0 +1,222 @@
+/* Set the values for the whole page */
+* {
+    font-size: 15px;
+    font-family: Hanken Grotesk;
+    
+}
+
+
+
+/* Set the division of sections */
+.section-parent{
+    display: flex; 
+    border: none;
+    box-shadow: 7px 5px 35px hsl(221, 100%, 96%);
+    border-radius: 30px;
+    margin: 10rem 25rem 5rem 25rem;
+    text-align: center;
+    align-items: stretch;
+    
+    
+}
+.section-child{
+    flex:1;
+    display: inline-block;
+    border-radius: inherit;
+    padding: 10px 30px 10px 30px;
+    vertical-align: middle;   
+
+}
+/*
+.selection-parent{
+    display: flex;
+}
+.selection-child{
+    flex:1;
+    padding:1em;
+    border: solid;
+}
+*/
+
+/* Set the values for Results area */
+#resultArea{
+    background-image:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    padding:10px 30px;
+  
+}
+#resultArea h2,h3{
+    color: white;
+}
+#resultArea p {
+    color: white;
+    font-weight: 150;
+   
+}
+#resultArea h2{
+    font-size: 25px ;
+    
+}
+#resultArea h3{
+    font-weight: 500;
+    font-size:20px;
+}
+
+/* Set the values for circle */
+.resultCircle{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 45px;
+    padding-top: 8px;
+    height: 10em;
+    width: 10em;
+    
+   
+    
+    
+    
+    
+
+}
+
+
+/* Set the values for the summary area */
+
+
+#summeryArea{
+    background-color: hsl(0, 0%, 100%);
+   
+   
+    
+}
+
+#summaryArea h3{
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 800;
+    
+}
+div.fig-box{
+    width: 100%;
+    margin:10px -10px;
+    padding: 10px 10px 0px 10px;
+    background-color:lightgoldenrodyellow;
+    display: table;
+    border-radius: 10px;
+}
+
+
+img.value-icons{
+    float:left; 
+    width: 20px;
+    height: 20px;
+    display: inline;
+    
+    
+    
+}
+
+
+p.value-num{
+   float:right;
+   position: relative;
+   display: inline;
+   padding-right:15px;
+   padding-left: 20px;
+   margin-top: -0.1em;
+   
+     
+}
+
+
+p.value-val{
+    float:left; 
+    position: relative;
+    display: inline;
+    padding-left: 15px;
+    margin-top: -0.1em;
+  
+}
+
+button{
+    color: white;
+    padding:10px;
+    margin-top:10px;
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+    background-color: hsl(224, 30%, 27%);
+    
+}
+button:hover{
+    background-color:hsl(241, 81%, 54%);
+}
+button:active{
+    background-color: blueviolet;
+}
+
+@media screen and (max-width:600px) {
+    .section-parent{
+        display: block;
+        margin: -10px -5px;
+        padding:0px;
+        
+
+        
+        
+    }
+    .section-child{
+        vertical-align: center;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        margin: 0px;
+        padding:0px;
+        width: 85%;
+        
+    }
+    #resultArea{
+       margin:0px -10px;
+        
+    }
+    .resultCircle{
+    height: 8em;
+    width: 8em;
+    margin:0% 30%;
+    
+    
+    
+    
+
+    }
+    .resultCircle p{
+        font-size: 0.8em;
+        margin-bottom: -10px;
+        
+    }
+    .value-val {
+        font-size:1em;
+    }
+    .value-icons{
+        height:15px;
+        width: 15px;
+    }
+    .attribution{
+        font-size:0.4em;
+        margin-top:30px;
+    }
+   
+
+}
+
+@media screen and (max-width:1300px) and (min-width:600px)
+
+{
+    .section-parent{
+        display: block;
+        margin: 20em 0em;
+        padding:0px;   
+}
+}
