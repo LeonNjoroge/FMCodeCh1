@@ -1,4 +1,4 @@
-/*const info ="data.json";*/
+
 let info = [
     {
       "category": "Reaction",

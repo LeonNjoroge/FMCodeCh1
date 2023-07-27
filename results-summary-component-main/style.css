@@ -27,16 +27,7 @@
     vertical-align: middle;   
 
 }
-/*
-.selection-parent{
-    display: flex;
-}
-.selection-child{
-    flex:1;
-    padding:1em;
-    border: solid;
-}
-*/
+
 
 /* Set the values for Results area */
 #resultArea{
